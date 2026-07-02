@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SaleX 隐私政策</title>
+  <meta name="description" content="SaleX 隐私政策">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f7f5;
+      --fg: #1f2328;
+      --muted: #667085;
+      --card: #ffffff;
+      --line: #d9d9d6;
+      --accent: #0f6b5f;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101214;
+        --fg: #f2f4f7;
+        --muted: #aab2bd;
+        --card: #171a1d;
+        --line: #2a2f35;
+        --accent: #5dd0bb;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.72;
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 72px;
+    }
+
+    article {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: clamp(24px, 5vw, 48px);
+    }
+
+    h1, h2, h3 {
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(30px, 5vw, 44px);
+    }
+
+    h2 {
+      margin: 36px 0 12px;
+      font-size: 22px;
+      border-top: 1px solid var(--line);
+      padding-top: 28px;
+    }
+
+    h3 {
+      margin: 24px 0 8px;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 0 0 16px 1.2em;
+      padding: 0;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .meta {
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    .notice {
+      background: color-mix(in srgb, var(--accent) 10%, transparent);
+      border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--line));
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin: 22px 0;
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>SaleX 隐私政策</h1>
+      <p class="meta">生效日期：2026 年 7 月 2 日<br>适用应用：SaleX（Bundle ID：com.terzetto.SalesVisitAssistant）</p>
+
+      <p>本隐私政策说明 SaleX 如何处理你在使用客户管理、名片识别、拜访记录、录音转写、云端拜访纪要、数据导入导出、iCloud 同步和订阅功能时产生的数据。</p>
+
+      <div class="notice">
+        <p><strong>核心原则：</strong>SaleX 采用本地优先的数据处理方式。客户、联系人、项目、拜访、待办、名片识别结果、录音和转写文本默认保存在你的设备本地。只有当你主动使用云端拜访纪要、iCloud 同步、App Store 订阅校验或系统分享等功能时，相关数据才会离开设备。</p>
+      </div>
+
+      <h2>1. 我们处理的数据类型</h2>
+      <h3>1.1 你在应用内录入或生成的数据</h3>
+      <ul>
+        <li>客户与联系人信息：公司名称、地址、联系人姓名、职务、电话、邮箱、备注等。</li>
+        <li>销售项目信息：项目名称、阶段、里程碑、金额、进度、备注等。</li>
+        <li>拜访信息：拜访时间、参与人、拜访记录、转写文本、拜访纪要、后续待办等。</li>
+        <li>个人设置：看板排序、AI 后端地址、功能偏好、订阅状态缓存等。</li>
+      </ul>
+
+      <h3>1.2 设备权限相关数据</h3>
+      <ul>
+        <li>相机：用于拍摄名片并识别客户和联系人信息。</li>
+        <li>照片图库：用于从相册选择名片图片进行识别。</li>
+        <li>麦克风：用于记录销售拜访语音。</li>
+        <li>语音识别：用于将拜访录音转换为文字。</li>
+        <li>iCloud：仅在你主动使用 iCloud 同步时，用于保存和恢复 SaleX 数据备份。</li>
+      </ul>
+
+      <h2>2. 本地处理</h2>
+      <p>SaleX 的主要数据保存在 iOS 应用沙盒内。本机名片识别基于 Apple Vision 文本识别能力，识别过程在设备上完成。名片图片用于识别文字，SaleX 不会因为名片识别功能把名片图片上传到我们的服务器。</p>
+      <p>录音转写基于 Apple 系统语音识别能力。SaleX 不保留第三方云端 ASR 服务，也不会把录音发送到 SaleX 自建 ASR 服务。Apple 系统语音识别在不同 iOS 版本、语言和设备设置下可能由 Apple 系统服务处理，相关处理遵循 Apple 的隐私政策和系统权限设置。</p>
+
+      <h2>3. 云端拜访纪要</h2>
+      <p>当你主动点击生成云端拜访纪要时，SaleX 会把生成纪要所需内容发送到 SaleX 后端服务，包括客户名称、项目上下文、转写文本和相关拜访内容。SaleX 后端目前部署在阿里云函数计算，并调用 DeepSeek 模型生成结构化拜访纪要。</p>
+      <p>这些数据仅用于完成你本次请求和返回纪要结果。SaleX 不会将这些内容用于广告追踪，也不会出售给数据经纪商。云服务商和模型服务商可能基于其服务规则处理必要的请求、安全、计费或运行日志。</p>
+
+      <h2>4. 订阅与购买</h2>
+      <p>SaleX Pro 订阅通过 Apple App Store 和 StoreKit 处理。支付卡号、银行账户等付款信息由 Apple 处理，SaleX 不会接触你的完整付款信息。</p>
+      <p>为了判断你是否拥有有效的 SaleX Pro 订阅，应用会保存和发送必要的 App Store 交易标识到 SaleX 后端；后端会向 Apple App Store Server API 校验订阅状态、产品 ID、Bundle ID、撤销状态和过期时间。</p>
+
+      <h2>5. iCloud 同步、导入导出与分享</h2>
+      <p>如果你主动使用 iCloud 同步，SaleX 会把本地数据生成备份快照并保存到你的 iCloud 容器中。备份包含客户、联系人、项目、拜访、纪要、待办和部分设置；本地备份导出不会包含录音音频文件。</p>
+      <p>如果你主动导出 Excel、Word 或本地 JSON 备份，文件会由系统分享面板或文件选择器交给你指定的位置或应用。你选择发送给第三方应用、聊天工具、邮箱或云盘后的数据处理，由对应第三方服务负责。</p>
+
+      <h2>6. 我们不会做的事</h2>
+      <ul>
+        <li>不会将你的数据用于跨 App 或跨网站追踪。</li>
+        <li>不会使用广告 ID 建立广告画像。</li>
+        <li>不会向数据经纪商出售客户、联系人、录音、转写文本或拜访纪要。</li>
+        <li>不会在未触发相关功能时上传名片图片、录音或本地业务数据。</li>
+      </ul>
+
+      <h2>7. 数据保存与删除</h2>
+      <p>本地数据会保存在你的设备上，直到你在应用内删除、导入其他备份覆盖、卸载应用，或通过 iOS 系统清除应用数据。拜访录音和长转写相关文件会按应用内现有清理规则处理。iCloud 备份会保存在你的 iCloud 中，直到你在 iCloud 或应用内删除、覆盖或关闭相关数据。</p>
+
+      <h2>8. 数据安全</h2>
+      <p>SaleX 使用 iOS 应用沙盒保存本地数据，并通过系统权限控制相机、相册、麦克风、语音识别和 iCloud 访问。云端请求使用 HTTPS 传输。请注意，任何互联网传输和电子存储方式都无法保证绝对安全。</p>
+
+      <h2>9. 儿童隐私</h2>
+      <p>SaleX 面向销售、客户管理和商务拜访场景，不面向 13 周岁以下儿童。如果你认为儿童向 SaleX 提供了个人信息，请通过下方联系方式与我们联系。</p>
+
+      <h2>10. 你的选择与权利</h2>
+      <ul>
+        <li>你可以在 iOS 系统设置中关闭 SaleX 的相机、照片、麦克风、语音识别或 iCloud 权限。</li>
+        <li>你可以在应用内查看、编辑、导出或删除客户、联系人、项目、拜访和待办数据。</li>
+        <li>你可以选择不使用云端拜访纪要、iCloud 同步、导出或分享功能。</li>
+        <li>你可以通过 App Store 管理或取消 SaleX Pro 订阅。</li>
+      </ul>
+
+      <h2>11. 政策更新</h2>
+      <p>如果 SaleX 的数据处理方式发生重要变化，我们会更新本政策并调整生效日期。你继续使用 SaleX 即表示你了解更新后的政策内容。</p>
+
+      <h2>12. 联系我们</h2>
+      <p>如果你对隐私政策或数据处理有问题，可以通过 App Store 产品页显示的开发者联系方式联系我们；也可以通过项目页面提交问题：<a href="https://github.com/ifnotmewhoelse/salesvisit/issues">https://github.com/ifnotmewhoelse/salesvisit/issues</a>。</p>
+      <p class="small">提交公开问题时，请不要包含客户名单、联系人电话、录音、转写文本、拜访纪要、订阅交易信息或其他敏感数据。</p>
+    </article>
+  </main>
+</body>
+</html>
